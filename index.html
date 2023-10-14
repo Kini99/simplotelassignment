@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplotel</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+    </style>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .navbar-f {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-left: 20%;
+            align-items: center;
+            font-weight: 500;
+            font-family: 'Merriweather', serif;
+            letter-spacing: 5px;
+        }
+
+        .content {
+            margin: 0;
+        }
+
+        .bgimg {
+            width: 100%;
+            position: relative;
+            margin-bottom: -5px;
+            height: auto;
+        }
+
+        .desc {
+            position: absolute;
+            background-color: rgba(215, 132, 132, 0.8);
+            width: 40%;
+            top: 70%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            color: white;
+            padding: 1% 3%;
+            box-sizing: border-box;
+        }
+
+        .order {
+            background: linear-gradient(to right, #ff68c2, #ffd95d);
+            border: 0.1px solid rgba(215, 132, 132, 0.8);
+            margin: 0;
+        }
+
+        .order h1 {
+            color: white;
+            text-align: center;
+            letter-spacing: 5px;
+            margin-top: 50px;
+        }
+
+        .cardContainer {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .card {
+            width: 280px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            background-color: white;
+            padding: 1%;
+            text-align: center;
+            height: 380px;
+            margin: 20px;
+        }
+
+        .card h3 {
+            margin: 10px;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+
+        .card p {
+            margin: 10px;
+        }
+
+        .img {
+            border-top-right-radius: 50px;
+            width: 95%;
+            height: 70%;
+            object-fit: cover;
+        }
+
+        .btnContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .orderBtn {
+            align-self: center;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            padding: 15px 45px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            font-size: larger;
+        }
+
+        @media (max-width: 1086px) {
+            .navbar-f {
+                margin: 0 20px;
+            }
+            .desc {
+                width: 50%;
+                left: 40%;
+                transform: translateX(-50%);
+                top: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .desc {
+                width: 95%;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar-f">
+        <p>Home</p>
+        <p>Order</p>
+        <p>Food</p>
+        <p>Restaurant</p>
+        <p>Testimonials</p>
+        <p>Contact Us</p>
+        <div>
+            <img src="img5.png" alt="">
+        </div>
+    </nav>
+    <!--Home Screen-->
+    <div class="content">
+        <img src="img1.jpg" alt="" class="bgimg">
+        <div class="desc">
+            <h1>LOREM IPSUM</h1>
+            <p>Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+    </div>
+    <!--Order Screen-->
+    <div class="order">
+        <h1>Order Now</h1>
+        <div class="cardContainer">
+            <div class="card">
+                <img src="img4.jpg" alt="" class="img">
+                <h3>BURGER</h3>
+                <p>Lorem ipsum has been the industry's standard dummy text</p>
+            </div>
+            <div class="card">
+                <img src="img2.jpg" alt="" class="img">
+                <h3>PIZZA</h3>
+                <p>Lorem ipsum has been the industry's standard dummy text</p>
+            </div>
+            <div class="card">
+                <img src="img3.jpg" alt="" class="img">
+                <h3>PASTA</h3>
+                <p>Lorem ipsum has been the industry's standard dummy text</p>
+            </div>
+        </div>
+        <div class="btnContainer">
+            <button class="orderBtn">Order</button>
+        </div>
+</body>
+
+</html>
